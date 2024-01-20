@@ -33,5 +33,6 @@ Sử dụng ngrok để tạo kênh https:
 ```
 ngrok http 8000
 ```
+copy link và dán vào Webhot của dialogflow nhé
 
 LƯU Ý: ngrok có thể hết thời gian. Bạn cần khởi động lại phiên nếu bạn nhìn thấy thông báo hết hạn phiên.
