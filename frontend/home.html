@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Your CSS styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: #ff5733;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #f0f0f0;
+        }
+        section {
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            color: #ff5733;
+        }
+        footer {
+            background-color: #ff5733;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .chat-bot {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border: none;
+            z-index: 1000; 
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+        section img {
+            display: block;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            /* Parallax and Animation */
+            transition: transform 0.5s ease-out;
+            animation: animateBg 10s infinite linear;
+        }
+       
+        .chat-bot {
+            width: 100%;
+            max-width: 350px;
+            height: 430px;
+            border: none;
+        }
+
+        .chat-bot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+ 
+
+        @keyframes animateBg {
+            0% { transform: scale(1.05); }
+            50% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#home">HOME</a> |
+                <a href="#menu">MENU</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#aboutus">ABOUT US</a> |
+                <a href="#contactus">CONTACT US</a>
+            </nav>
+        </header>
+
+        <section id="home">
+            <img src="banner.jpg" alt="Banner Image">
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="grid-container">
+                <img src="menu1.jpg" alt="Menu item 1">
+                <img src="menu2.jpg" alt="Menu item 2">
+                <img src="menu3.jpg" alt="Menu item 3">
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+            <p>Nhóm 5 - Trí Tuệ Nhân Tạo</p>
+            <!-- Add map widget here -->
+        </section>
+
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <p>Lê Hoàng Anh - Nguyễn Tấn Phát - Đàm Mạnh Lưu - Nguyễn Phạm Khánh Chi - Huỳnh Võ Nguyên Chương</p>
+        </section>
+
+        <div class="chat-bot-container">
+            <iframe class="chat-bot" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/61e354b3-8a82-44c4-9dce-184c8c1dda0a"></iframe>
+        </div>    </div>
+</body>
+</html>
